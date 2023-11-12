@@ -376,7 +376,7 @@ async def markup_timer():
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("ar")
                 try:
                     buttons = stream_markup_timer(
                         _,
@@ -394,3 +394,4 @@ async def markup_timer():
 
 
 asyncio.create_task(markup_timer())
+        
